@@ -1,11 +1,3 @@
-/************************************************
-Css Table Of Content
------------------------
-01. Resset Css
-02. Typogrpahy
-03. Scroll Top CSS
-04. Global Style
-*************************************************/
 @font-face {
     font-family: 'Futura Bk BT';
     src: url('../fonts/FuturaBT-Book.eot');
@@ -62,6 +54,10 @@ Css Table Of Content
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%;
+}
+:root{
+  --primary: #f43534;
+  --bodybg: #141519;
 }
 main {
   display: block;
@@ -342,7 +338,7 @@ h6 {
 
 /*-------------03. scroll top css-----------*/
 .scroll-top {
-    background: #f43534;
+    background: var(--primary);
     border-radius: 3px;
     bottom: 50px;
     cursor: pointer;
@@ -431,7 +427,7 @@ h6 {
     transition: all 0.5s ease;
 }
 .social-icon li a:hover {
-    background: #f43534;
+    background: var(--primary);
 }
 .social-icon li a svg{
     width: 15px;
@@ -506,7 +502,7 @@ a {
 .link-default span{
     height: 53px;
     width: 53px;
-    background: #f43534;
+    background: var(--primary);
     border-radius: 100%;
     display: inline-flex;
     flex-flow: column;
@@ -546,7 +542,7 @@ button[type="submit"] {
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 3px;
-    background: #f43534;
+    background: var(--primary);
     font-weight: 500;
     color: #fff;
 }

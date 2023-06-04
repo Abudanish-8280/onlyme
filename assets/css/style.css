@@ -122,7 +122,7 @@ header.header.sticky {
     margin-bottom: 0;
 }
 .menu-wrapper ul.main-menu li a {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Futura Md BT';
     font-weight: 700;
     line-height: normal;
@@ -163,7 +163,7 @@ header.header.sticky {
 
 .menu-wrapper ul.main-menu li a:before {
     content: attr(data-text);
-    color: #f43534;
+    color: var(--primary);
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +204,7 @@ header.header.sticky {
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #f43534;
+    color: var(--primary);
 }
 .menu-wrapper .quick-link .email a:hover{
     text-decoration: underline;
@@ -257,6 +257,7 @@ header.header.sticky {
 }
 
 /*-----hero section-----*/
+
 .hero-section {
     background: #16171b url('../images/hero-bg.jpg') no-repeat;
     background-position: center top;
@@ -285,7 +286,7 @@ header.header.sticky {
 }
 .hero-section .hero-image:before {
     content: "";
-    position: absolute;
+    position: absolute; 
     right: 0;
     top: 0;
     width: 100%;
@@ -368,7 +369,7 @@ header.header.sticky {
 }
 .hero-section .hero-content h1{
     background: url('../images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
-    font-size: 142px;
+    font-size: 100px;
     line-height: 0.8;
     color: #fff;
     font-family: 'Futura Md BT';
@@ -451,7 +452,7 @@ header.header.sticky {
     height: 128px;
     bottom: 40px;
     left: 100px;
-    background: #f43534;
+    background: var(--primary);
     animation: circle1-move 5s linear infinite;
 }
 
@@ -609,7 +610,7 @@ header.header.sticky {
     display: block;
     height: calc(100% + 80px);
     width: 2px;
-    background: #f43534;
+    background: var(--primary);
     position: absolute;
     left: 50%;
     margin-left: -1px;
@@ -622,7 +623,7 @@ header.header.sticky {
     width: 16px;
     height: 16px;
     border-radius: 100%;
-    background: #f43534;
+    background: var(--primary);
     left: -7px;
 }
 .skill-section .skill-wrapper .vertical-line:before{
@@ -687,7 +688,7 @@ header.header.sticky {
     display: block;
     width: 18px;
     height: 18px;
-    background: #f43534;
+    background: var(--primary);
     border-radius: 100%;
     position: absolute;
     top: 50px;
@@ -751,7 +752,7 @@ header.header.sticky {
     transition: all 0.5s ease;
 }
 .service-section .service-wrapper .single-service:hover {
-    border-bottom-color: #f43534;
+    border-bottom-color: var(--primary);
 }
 .service-section .service-wrapper .single-service .service-icon {
     margin: 0 auto 22px;
@@ -836,7 +837,7 @@ header.header.sticky {
 .portfolio-section .portfolio-content .portfolio-type{
     font-size: 14px;
     text-transform: uppercase;
-    color: #f43534;
+    color: var(--primary);
     font-weight: 700;
     font-family: 'Futura Md BT';
     letter-spacing: 1px;
@@ -873,8 +874,8 @@ header.header.sticky {
     padding: 0;
 }
 .portfolio-section .portfolio-content-wrapper .slick-arrow:hover {
-    background: #f43534;
-    border-color: #f43534;
+    background: var(--primary);
+    border-color: var(--primary);
     opacity: 1;
 }
 .portfolio-section .portfolio-content-wrapper .slick-next{
@@ -891,7 +892,7 @@ header.header.sticky {
     bottom: 6px;
     font-size: 20px;
     font-weight: 700;
-    color: #f43534;
+    color: var(--primary);
 }
 
 
@@ -941,7 +942,7 @@ header.header.sticky {
 .testimonial-section .single-testimonial .author a {
     font-size: 22px;
     font-weight: 700;
-    color: #f43534;
+    color: var(--primary);
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
     display: block;
@@ -951,7 +952,7 @@ header.header.sticky {
     display: block;
     font-size: 14px;
     text-transform: none;
-    color: #f43534;
+    color: var(--primary);
 }
 .testimonial-section .slick-dots{
     margin-top: 10px;
@@ -1012,7 +1013,7 @@ header.header.sticky {
     position: relative;
     padding: 102px 0 120px;
     overflow: hidden;
-    background: #141519 url("../images/project-bg.jpg") no-repeat center center/cover;
+    background: var(--bodybg) url("../images/project-bg.jpg") no-repeat center center/cover;
 }
 
 .blog-section .ellipse {
@@ -1128,7 +1129,7 @@ header.header.sticky {
     color: #fff;
 }
 .blog-section .single-blog .post-title h3 a:hover{
-    color: #f43534;
+    color: var(--primary);
 }
 .blog-section .single-blog .like-comment{
     display: flex;
@@ -1156,8 +1157,8 @@ header.header.sticky {
     background: #26272a;
 }
 .blog-section .single-blog .like-comment .read-more:hover {
-    background: #f43534;
-    border-color: #f43534;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 .blog-section .single-blog .like-comment span {
     color: #8b8a8a;
@@ -1176,7 +1177,7 @@ header.header.sticky {
 /*---------instagram-section------*/
 .instagram-section {
     padding: 120px 0;
-    background: #141519;
+    background: var(--bodybg);
     position: relative;
     overflow: hidden;
 }
@@ -1197,7 +1198,7 @@ header.header.sticky {
 .contact-section .section-title svg,
 .instagram-section .section-title svg{
     width: 45px;
-    color: #f43534;
+    color: var(--primary);
 }
 .contact-section .section-title h2,
 .instagram-section .section-title h2{
@@ -1241,7 +1242,7 @@ header.header.sticky {
 
 /*-----------contact-section---------*/
 .footer-area{
-    background: #141519 url("../images/service-bg.jpg") no-repeat center center / cover;
+    background: var(--bodybg) url("../images/service-bg.jpg") no-repeat center center / cover;
     position: relative;
 }
 .footer-area .contact-section{
@@ -1349,7 +1350,7 @@ header.header.sticky {
 }
 
 .contact-section .address-area address .email{
-    color: #f43534;
+    color: var(--primary);
     transition: all 1.2s ease 0.8s;
 }
 .contact-section .address-area address .email:hover{
@@ -1394,7 +1395,7 @@ header.header.sticky {
     color: #fff;
 }
 .footer-section .footer-content .copyright-text p a{
-    color: #f43534;
+    color: var(--primary);
     font-weight: 700;
 }
 .footer-section .footer-content .copyright-text p a:hover{
@@ -1414,7 +1415,7 @@ header.header.sticky {
 *******Blog page******
 -------------------*/
 .blog-page{
-    background: #141519;
+    background: var(--bodybg);
 }
 .blog-page .section-title{
     text-align: center;
@@ -1435,7 +1436,7 @@ header.header.sticky {
     font-size: 30px;
 }
 .blog-section .single-blog .post-title h3:first-letter {
-    color: #f43534;
+    color: var(--primary);
     font-weight: bold;
 }
 .blog-page .single-blog {
@@ -1449,7 +1450,7 @@ header.header.sticky {
     transform: translateY(100px);
 }
 .blog-page .single-blog .date {
-    background: #f43534;
+    background: var(--primary);
     display: block;
     position: absolute;
     top: 10px;
@@ -1507,7 +1508,7 @@ header.header.sticky {
 }
 .blog-page .pagination li a.active,
 .blog-page .pagination li a:hover{
-    background: #f43534;
+    background: var(--primary);
 }
 
 
@@ -1516,7 +1517,7 @@ header.header.sticky {
 *******blog-single******
 -----------------------*/
 .blog-single {
-    background: #141519;
+    background: var(--bodybg);
     padding-bottom: 120px;
 }
 
@@ -1545,7 +1546,7 @@ header.header.sticky {
 }
 .blog-single .blog-single-banner .banner-content p a,
 .blog-single .blog-single-banner .banner-content p {
-    color: #f43534;
+    color: var(--primary);
     text-transform: capitalize;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -1589,7 +1590,7 @@ header.header.sticky {
     margin-top: 23px;
     display: block;
     text-align: right;
-    color: #f43534;
+    color: var(--primary);
     font-weight: 700;
 }
 .blog-single .single-content blockquote .line {
@@ -1620,7 +1621,7 @@ header.header.sticky {
     font-size: 20px;
 }
 .blog-single .single-post-pagination a:hover{
-    color: #f43534;
+    color: var(--primary);
 }
 .blog-single .single-post-pagination a.prev{
     padding-left: 40px;
@@ -1697,7 +1698,7 @@ header.header.sticky {
     font-size: 15px;
 }
 .blog-single .comment-list .date-time:hover {
-    color: #f43534;
+    color: var(--primary);
 }
 .blog-single .comment-list .comment-content {
     font-size: 18px;
@@ -1707,7 +1708,7 @@ header.header.sticky {
 }
 .blog-single .comment-list .reply {
     font-size: 18px;
-    color: #f43534;
+    color: var(--primary);
     text-transform: capitalize;
     font-weight: 600;
 }
